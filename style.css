@@ -1,0 +1,49 @@
+body {
+	background: #333;
+}
+.feed {
+	background-color: white;
+	border-radius: 10px;
+	padding: 2rem 1rem;
+	width: 100%;
+	position: relative;
+}
+.feeds {
+	width: 30%;
+	margin: 0 auto;
+}
+.heart {
+	background-image: url(web_heart_animation.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 1450px;
+	cursor: pointer;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+}
+.heart:hover
+{
+	background-position: right; //displaying last heart frame 
+}
+
+@-webkit-keyframes heartTransition
+{
+	0% {background-position: left;}
+	100% {background-position: right;}
+}
+
+@keyframes heartTransition
+{
+	0% {background-position: left;}
+	100% {background-position: right;}
+}
+
+.heart_animate
+{
+	animation-duration: .8s;
+	animation-iteration-count: 1;
+	animation-name: heartTransition;
+	animation-timing-function: steps(28);
+	background-position: right;
+}
