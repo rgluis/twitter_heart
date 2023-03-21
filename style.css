@@ -24,7 +24,7 @@ body {
 }
 .heart:hover
 {
-	background-position: right; //displaying last heart frame 
+	background-position: right;
 }
 
 @-webkit-keyframes heartTransition
